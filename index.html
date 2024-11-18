@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign-up form to register for our exclusive service and realize your deepest dreams.">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+ 
+  <div class="image">
+    <img src="./images/background.jpg"alt="Background Image">
+
+  
+    <div class="logo">
+      <div class="banner">
+        <img src="./images/odin-lined.png"alt="Odin logo">
+        Logo
+      </div>
+    </div>
+
+   
+    <div class="attribution">
+      Photo by
+      <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a>
+      on
+      <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="container">
+    <header>
+      <section class="quote">
+        <p class="text">
+          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <i>now</i> to get started</p>
+        <p class="attr">You <i>know</i> you want to</p>
+      </section>
+    </header>
+  </main>
+
+  <!-- Sign-up Form Section -->
+  <section class="form-area">
+    <div class="h2">
+      <h2>Let's do this!</h2>
+    </div>
+
+    <form method="POST" action="submit_url">
+      <!-- Personal Information Section -->
+      <div class="user-info">
+        <label for="fname">
+          <p>FIRST NAME</p>
+          <input type="text" id="fname" name="fname" value="John" required aria-label="First Name" autocomplete="given-name" />
+        </label>
+
+        <label for="email">
+          <p>EMAIL</p>
+          <input type="email" id="email" name="email" value="name@example.com" required aria-label="Email Address" autocomplete="email" />
+        </label>
+      </div>
+
+      <div class="user-info">
+        <label for="lname">
+          <p>LAST NAME</p>
+          <input type="text" id="lname" name="lname" value="Doe" required aria-label="Last Name" autocomplete="family-name" />
+        </label>
+
+        <label for="phone">
+          <p>PHONE</p>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="1234567890" aria-label="Phone Number" autocomplete="tel" />
+        </label>
+      </div>
+
+      <!-- Password Section -->
+      <div class="password-section">
+        <label for="password">
+          <p>PASSWORD</p>
+          <input type="password" id="password" name="password" minlength="4" onkeyup="check();" required aria-label="Password" autocomplete="new-password" />
+          <span id="message"></span>
+        </label>
+
+        <label for="confirm-password">
+          <p>CONFIRM PASSWORD</p>
+          <input type="password" id="confirm-password" name="confirm-password" onkeyup="check();" required aria-label="Confirm Password" autocomplete="new-password" />
+        </label>
+      </div>
+
+      <hr>
+
+      <!-- Submit Button and Sign-in Prompt -->
+      <div class="container-signin">
+        <button type="submit" class="registerbtn">Create Account</button>
+        <div class="p">
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    let check = function () {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      const message = document.getElementById('message');
+
+      if (password === confirmPassword) {
+        message.style.color = 'green';
+        message.textContent = 'Matching';
+      } else {
+        message.style.color = 'red';
+        message.textContent = '*Passwords do not match';
+      }
+    };
+  </script>
+
+</body>
+
+</html>
