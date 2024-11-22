@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 0;
+}
+
+
+header {
+  height: 35vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: whitesmoke;
+  padding-left: 1.5em;
+  padding-top: 2em;
+}
+
+/* Quote Section */
+.quote {
+  width: 70%;
+  margin-top: 60px;
+  padding-top: 1.5em;
+}
+
+.quote p {
+  padding: 0 1em;
+  font-size: 25px;
+  color: #1F2937;
+  font-weight: bolder;
+  letter-spacing: 0.01em;
+}
+
+.quote > .attr {
+  padding-top: 0.5em;
+  color: #1F2937;
+  font-size: 25px;
+}
+
+
+.image {
+  display: flex;
+  height: 100vh;
+  float: left;
+  padding-left: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Norse Bold";
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 5rem;
+  color: #E5E7EB;
+  height: 15vh;
+  width: 32.7vw;
+}
+
+.banner img {
+  height: 125px;
+}
+
+.banner h2 {
+  margin: 0;
+}
+
+.logo {
+  position: fixed;
+  padding-top: 11rem;
+}
+
+
+.attribution {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding-left: 12rem;
+  padding-bottom: 0.5rem;
+  color: lightgrey;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
