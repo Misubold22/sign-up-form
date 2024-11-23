@@ -102,3 +102,183 @@ header {
   font-size: 13px;
 }
 
+/* Form Section */
+.form-area {
+  height: 30vh;
+  width: 100vw;
+  padding-top: 1em;
+  background: white;
+  padding-left: 2em;
+}
+
+
+.user-info input[type="text"],
+.user-info input[type="email"] {
+  background-color: #FFFFFF;
+  border: 2px solid #E5E7EB;
+  border-radius: 3px;
+  width: 130%;
+  padding: 4px;
+}
+
+.user-info {
+  padding-top: 1em;
+  padding-left: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  float: left;
+}
+
+
+.password-section {
+  display: flex;
+  padding-left: 3em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0.5rem;
+  flex-direction: row;
+  padding-bottom: 2.5em;
+}
+
+/* Labels Styling */
+label[for="confirm-password"] {
+  padding-top: 15px;
+  padding-left: 7em;
+}
+
+label[for="phone"],
+label[for="lname"] {
+  padding-left: 4em;
+}
+
+label[for="phone"] {
+  padding-top: 15px;
+}
+
+label[for="email"],
+label[for="password"] {
+  padding-top: 15px;
+}
+
+
+.h2 {
+  padding-left: 3em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.user-info,
+.password-section {
+  margin-bottom: 0;
+}
+
+.user-info label,
+.password-section label {
+  display: block;
+}
+
+.user-info p,
+.password-section p {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 13px;
+  padding: 0;
+}
+
+/* Input Fields Styling */
+.user-info input,
+.password-section input {
+  width: 130%;
+  padding: 4px;
+  border: 2px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+/* Focus and Hover Effects */
+input,
+textarea {
+  box-shadow: 1px #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: blue;
+}
+
+input:hover,
+input:focus,
+.user-info input:hover,
+.user-info input:focus {
+  background-color: #eee;
+}
+
+
+label[for="email"] input:invalid {
+  border: 2px solid red;
+  background-color: beige;
+}
+
+
+.container-signin {
+  height: 35vh;
+  padding-top: 1em;
+  background: whitesmoke;
+  padding-left: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Password Match Message */
+#message {
+  font-style: normal;
+  letter-spacing: 0.01em;
+  font-size: 15px;
+  color: #1F2937;
+  position: fixed;
+}
+
+/* Divider Line */
+hr {
+  height: 2px;
+  border-width: 0;
+  color: lightgray;
+  background-color: lightgray;
+}
+
+
+.registerbtn {
+  background-color: #596D48;
+  color: white;
+  padding: 13px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+  border-radius: 7px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.container-signin > .p {
+  padding-top: 1em;
+}
+
+p > a {
+  color: #596D48;
+  text-decoration: none;
+}
+
+a {
+  color: lightgray;
+}
