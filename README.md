@@ -18,7 +18,6 @@ The **Sign-up Form** project demonstrates a simple yet elegant form for user reg
 ---
 
 ## Features
-- **Responsive Design**: Optimized for various screen sizes using flexible layouts.
 - **Custom Font**: Includes a custom Norse-themed font for a unique design.
 - **Interactive Input Fields**:
   - Password matching validation with real-time feedback.
@@ -58,8 +57,7 @@ The form includes real-time password matching feedback. Click the Create Account
 File Structure
 The file structure of the project is as follows:
 
-css
-Copy code
+
 sign-up-form/
 ├── fonts/
 │   └── Norse-Bold.otf
